@@ -163,7 +163,7 @@ $tlCfg->smarty_debug = false;
  *	for security reasons (see http://itsecuritysolutions.org/2012-08-13-TestLink-1.9.3-multiple-vulnerabilities/)
  *	put it out of reach via web or configure access denied.
  */
-$tlCfg->log_path = '/var/testlink/logs/'; /* unix example */
+$tlCfg->log_path = '/var/tmp/'; /* unix example */
 
 
 /**
@@ -883,7 +883,7 @@ $tlCfg->attachments->accessString = "[*]";
 $tlCfg->attachments->orderBy = " ORDER BY date_added DESC ";
 
 $tlCfg->attachments->repository->type = TL_REPOSITORY_TYPE_FS;
-$tlCfg->attachments->repository->path = '/var/testlink/upload_area/';  /* unix example */
+$tlCfg->attachments->repository->path = '/var/tmp/';  /* unix example */
 
 // the maximum allowed file size for each repository entry, default 1MB.
 // Also check your PHP settings (default is usually 2MBs)
